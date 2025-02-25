@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.contact, .contact-info {
+    background: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .contact, body.dark-mode .contact-info {
+    background: #444;
+    color: #ddd;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background: #555;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #333;
+}
+
+body.dark-mode .contact-info i {
+    color: #ddd;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #555;
+}
+
+body.dark-mode .social-media a {
+    color: #ddd;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch label {
+    cursor: pointer;
+    background: #ccc;
+    width: 50px;
+    height: 25px;
+    border-radius: 25px;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.switch label:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    transition: left 0.3s;
+}
+
+.switch input:checked + label {
+    background: #555;
+}
+
+.switch input:checked + label:before {
+    left: 25px;
+}

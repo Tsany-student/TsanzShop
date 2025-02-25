@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami - Toko Online</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-store"></i> Toko Online Sederhana</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <label class="switch">
+                <input type="checkbox" id="toggle-theme">
+                  <span class="slider"></span>
+      </label>  
+        </div>
+    </header>
+    
+    <main>
+        <section class="contact">
+            <div class="container">
+                <h2>Hubungi Kami</h2>
+                <p>Jika Anda memiliki pertanyaan atau memerlukan bantuan, silakan hubungi kami melalui formulir di bawah ini.</p>
+                <form action="#" method="post" class="contact-form">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    
+                    <button type="submit">Kirim</button>
+                </form>
+            </div>
+        </section>
+        
+        <section class="contact-info">
+            <div class="container">
+                <h2>Informasi Kontak</h2>
+                <p><i class="fas fa-map-marker-alt"></i> Alamat: Jl. Contoh No. 123, Jakarta</p>
+                <p><i class="fas fa-phone"></i> Telepon: +62 812 3456 7890</p>
+                <p><i class="fas fa-envelope"></i> Email: support@tokoonline.com</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Toko Online Sederhana | <a href="privacy.html">Kebijakan Privasi</a></p>
+        </div>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
